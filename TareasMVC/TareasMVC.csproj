@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Recursos\Controllers\HomeController.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>HomeController.en.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\Views\Home\Index.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.en.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\Views\Home\Index.es.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.es.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\RecursoCompartido.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RecursoCompartido.en.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\RecursoCompartido.es.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RecursoCompartido.es.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\Shared\TraduccionesJS.es.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>TraduccionesJS.es.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Recursos\Shared\TraduccionesJS.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>TraduccionesJS.en.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Recursos\Controllers\HomeController.en.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>HomeController.en.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\Views\Home\Index.en.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.en.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\Views\Home\Index.es.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.es.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\RecursoCompartido.en.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RecursoCompartido.en.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\RecursoCompartido.es.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RecursoCompartido.es.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\Shared\TraduccionesJS.es.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TraduccionesJS.es.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Recursos\Shared\TraduccionesJS.en.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TraduccionesJS.en.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
